@@ -1,0 +1,41 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"# 库存一体化流程图\n**智邦国际 ERP · SUEL**","x":-200,"y":-900,"width":400,"height":80,"color":"6"},
+		{"id":"inbound_apply","type":"text","text":"## 📥 入库申请\n来源：\n• 采购入库\n• 生产入库\n• 销售退货入库\n• 组装/借货还货入库","x":-500,"y":-760,"width":300,"height":200,"color":"2"},
+		{"id":"inbound_confirm","type":"text","text":"## 入库确认\n[[07-库房操作指南]]\n在「待入库单」中确认","x":-500,"y":-480,"width":300,"height":110,"color":"2"},
+		{"id":"inventory","type":"text","text":"## 📦 库存\n实时库存数据\n库存查询 / 库位管理","x":-500,"y":-300,"width":300,"height":120,"color":"5"},
+		{"id":"outbound_apply","type":"text","text":"## 📤 出库申请\n来源：\n• 销售出库\n• 生产领料出库\n• 借货出库 / 调拨出库","x":-500,"y":-100,"width":300,"height":180,"color":"4"},
+		{"id":"qc_yes","type":"text","text":"## 需要质检\n先质检再出库","x":-760,"y":240,"width":240,"height":80,"color":"3"},
+		{"id":"qc_no","type":"text","text":"## 无需质检\n直接确认出库","x":-200,"y":240,"width":240,"height":80,"color":"3"},
+		{"id":"outbound_confirm","type":"text","text":"## 出库确认\n[[07-库房操作指南]]\n在「待出库单」中确认","x":-500,"y":400,"width":300,"height":140,"color":"4"},
+		{"id":"stocktake","type":"text","text":"## 📋 库存盘点\n[[07-库房操作指南]]\n汇总盘点 / 精确盘点\n盘盈/盘亏处理","x":160,"y":-660,"width":300,"height":140,"color":"5"},
+		{"id":"transfer","type":"text","text":"## 🔄 库存调拨\n[[07-库房操作指南]]\n汇总移库 / 精确移库\n仓库间物料调拨","x":160,"y":-440,"width":300,"height":140,"color":"5"},
+		{"id":"assembly","type":"text","text":"## 🔧 组装拆装\n[[07-库房操作指南]]\n组装：淘汰→可用\n拆装：正常→需要的产品","x":160,"y":-200,"width":300,"height":140,"color":"6"},
+		{"id":"borrow","type":"text","text":"## 📤 借货管理\n[[07-库房操作指南]]\n借货 / 还货\n借货转销售合同","x":160,"y":0,"width":300,"height":160,"color":"6"},
+		{"id":"warning","type":"text","text":"## ⚠️ 库存预警\n[[07-库房操作指南]]\n设定上下限\n预警→自动转预购\n→ [[04-采购部操作指南]]","x":160,"y":200,"width":300,"height":180,"color":"1"},
+		{"id":"finance","type":"text","text":"## 💰 财务关联\n[[08-财务部操作指南]]\n库存成本核算\n费用关联","x":160,"y":400,"width":300,"height":140,"color":"6"},
+		{"id":"ship","type":"text","text":"## 🚚 发货\n[[07-库房操作指南]]\n出库完毕后\n管理发货过程","x":-500,"y":640,"width":300,"height":140,"color":"1"},
+		{"id":"outbound_qc","type":"text","text":"## ◇ 出库前质检？","x":-500,"y":130,"width":260,"height":60,"color":"5"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"inbound_apply","fromSide":"bottom","toNode":"inbound_confirm","toSide":"top"},
+		{"id":"e2","fromNode":"inbound_confirm","fromSide":"bottom","toNode":"inventory","toSide":"top"},
+		{"id":"e3","fromNode":"inventory","fromSide":"bottom","toNode":"outbound_apply","toSide":"top"},
+		{"id":"e4","fromNode":"outbound_apply","fromSide":"bottom","toNode":"outbound_qc","toSide":"top"},
+		{"id":"e5","fromNode":"outbound_qc","fromSide":"left","toNode":"qc_yes","toSide":"top"},
+		{"id":"e6","fromNode":"outbound_qc","fromSide":"right","toNode":"qc_no","toSide":"top"},
+		{"id":"e7","fromNode":"qc_yes","fromSide":"bottom","toNode":"outbound_confirm","toSide":"left"},
+		{"id":"e8","fromNode":"qc_no","fromSide":"bottom","toNode":"outbound_confirm","toSide":"right","color":"4"},
+		{"id":"e9","fromNode":"outbound_confirm","fromSide":"bottom","toNode":"ship","toSide":"top"},
+		{"id":"e10","fromNode":"inventory","fromSide":"right","toNode":"stocktake","toSide":"left"},
+		{"id":"e11","fromNode":"stocktake","fromSide":"bottom","toNode":"inventory","toSide":"right"},
+		{"id":"e12","fromNode":"inventory","fromSide":"right","toNode":"transfer","toSide":"left"},
+		{"id":"e13","fromNode":"transfer","fromSide":"top","toNode":"inventory","toSide":"right"},
+		{"id":"e14","fromNode":"assembly","fromSide":"left","toNode":"inventory","toSide":"right"},
+		{"id":"e15","fromNode":"assembly","fromSide":"left","toNode":"outbound_apply","toSide":"right"},
+		{"id":"e16","fromNode":"borrow","fromSide":"left","toNode":"outbound_apply","toSide":"right"},
+		{"id":"e17","fromNode":"borrow","fromSide":"left","toNode":"inbound_apply","toSide":"right"},
+		{"id":"e18","fromNode":"warning","fromSide":"top","toNode":"outbound_apply","toSide":"right"},
+		{"id":"e19","fromNode":"ship","fromSide":"right","toNode":"finance","toSide":"left"}
+	]
+}

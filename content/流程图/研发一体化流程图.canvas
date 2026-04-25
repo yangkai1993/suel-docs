@@ -1,0 +1,32 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"# 研发一体化流程图\n**智邦国际 ERP · SUEL**","x":-200,"y":-700,"width":400,"height":80,"color":"6"},
+		{"id":"product","type":"text","text":"## 📦 产品档案\n[[13-上线准备手册]]\n录入产品分类\n建立产品信息","x":-560,"y":-360,"width":300,"height":140,"color":"1"},
+		{"id":"design_task","type":"text","text":"## 📋 设计任务分配\n[[03-技术部操作指南]]\n⚠️ 分配任务后\n才能开始设计","x":-180,"y":-360,"width":300,"height":140,"color":"1"},
+		{"id":"design_exec","type":"text","text":"## ✏️ 设计工作执行\n[[03-技术部操作指南]]\n每个产品需点击「设计」\n完成后点击「设计完成」","x":-180,"y":-140,"width":320,"height":140,"color":"1"},
+		{"id":"bom","type":"text","text":"## 📄 物料清单（BOM）\n[[03-技术部操作指南]]\n设计生成 / 手动创建 / 批量导入\n⚠️ 不绑定工艺→工艺不选择","x":-180,"y":80,"width":320,"height":140,"color":"2"},
+		{"id":"process","type":"text","text":"## 🔧 工艺流程\n[[03-技术部操作指南]]\n产品标准工艺流程模板\n可绑定到BOM","x":-560,"y":80,"width":300,"height":140,"color":"3"},
+		{"id":"process_detail","type":"text","text":"## ⚙️ 车间·产线·工序\n[[13-上线准备手册]]\n1. 建立工序\n2. 建立车间\n3. 产线绑定工序","x":-560,"y":280,"width":300,"height":200,"color":"3"},
+		{"id":"contract_entry","type":"text","text":"## 🔗 合同转设计入口\n销售合同确认后\n设计需求转至技术部","x":-560,"y":-560,"width":300,"height":120,"color":"6"},
+		{"id":"bom_import","type":"text","text":"## 📥 BOM批量导入\n[[03-技术部操作指南]]\n下载模板→编辑→导入","x":240,"y":90,"width":260,"height":120,"color":"6"},
+		{"id":"to_production","type":"text","text":"## 🏭 → 生产计划\n[[05-生产部操作指南]]\nBOM用于生产计划\n→ 物料分析 → 生产订单","x":-560,"y":600,"width":300,"height":140,"color":"4"},
+		{"id":"to_sales","type":"text","text":"## 💰 → 报价引用BOM\n[[02-销售部操作指南]]\n报价时引用产品BOM\n确定物料成本","x":220,"y":600,"width":280,"height":140,"color":"4"},
+		{"id":"to_purchase","type":"text","text":"## 🛒 → 转预购\n[[05-生产部操作指南]]\nBOM中库存不足物料\n转入预购单","x":-160,"y":600,"width":280,"height":140,"color":"4"},
+		{"id":"downstream","type":"text","text":"## ◇ 下游对接\nBOM完成后分流至各部门","x":-170,"y":380,"width":300,"height":80,"color":"5"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"contract_entry","fromSide":"bottom","toNode":"product","toSide":"top"},
+		{"id":"e2","fromNode":"product","fromSide":"right","toNode":"design_task","toSide":"left"},
+		{"id":"e3","fromNode":"design_task","fromSide":"bottom","toNode":"design_exec","toSide":"top"},
+		{"id":"e4","fromNode":"design_exec","fromSide":"bottom","toNode":"bom","toSide":"top"},
+		{"id":"e5","fromNode":"bom","fromSide":"right","toNode":"bom_import","toSide":"left"},
+		{"id":"e6","fromNode":"process","fromSide":"top","toNode":"product","toSide":"bottom"},
+		{"id":"e7","fromNode":"process","fromSide":"bottom","toNode":"process_detail","toSide":"top"},
+		{"id":"e8","fromNode":"process_detail","fromSide":"right","toNode":"bom","toSide":"left"},
+		{"id":"e9","fromNode":"bom","fromSide":"bottom","toNode":"downstream","toSide":"top"},
+		{"id":"e10","fromNode":"downstream","fromSide":"left","toNode":"to_production","toSide":"top"},
+		{"id":"e11","fromNode":"downstream","fromSide":"bottom","toNode":"to_purchase","toSide":"top"},
+		{"id":"e12","fromNode":"downstream","fromSide":"right","toNode":"to_sales","toSide":"top"},
+		{"id":"e13","fromNode":"process_detail","fromSide":"bottom","toNode":"to_production","toSide":"left"}
+	]
+}
