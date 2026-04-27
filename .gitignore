@@ -9,3 +9,5 @@ tsconfig.tsbuildinfo
 private/
 .replit
 replit.nix
+# PDF files (too large for Cloudflare Pages 25MB limit)
+content/pdfs/
