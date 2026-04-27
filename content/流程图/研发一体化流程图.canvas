@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"title","type":"text","text":"# 研发一体化流程图\n**智邦国际 ERP · SUEL**","x":-200,"y":-700,"width":400,"height":80,"color":"6"},
+		{"id":"title","type":"text","text":"# 研发一体化流程图\n**速易联 ERP · SUEL**","x":-200,"y":-700,"width":400,"height":80,"color":"6"},
 		{"id":"product","type":"text","text":"## 📦 产品档案\n[[13-上线准备手册]]\n录入产品分类\n建立产品信息","x":-560,"y":-360,"width":300,"height":140,"color":"1"},
 		{"id":"design_task","type":"text","text":"## 📋 设计任务分配\n[[03-技术部操作指南]]\n⚠️ 分配任务后\n才能开始设计","x":-180,"y":-360,"width":300,"height":140,"color":"1"},
 		{"id":"design_exec","type":"text","text":"## ✏️ 设计工作执行\n[[03-技术部操作指南]]\n每个产品需点击「设计」\n完成后点击「设计完成」","x":-180,"y":-140,"width":320,"height":140,"color":"1"},

@@ -18,7 +18,7 @@
 		{"id":"finance","type":"text","text":"## 💰 财务部\n[[08-财务部操作指南]]\n收款/开票/成本核算","x":500,"y":500,"width":280,"height":100,"color":"6"},
 		{"id":"exchange","type":"text","text":"## 🔄 销售换货\n换货→重新发货","x":320,"y":750,"width":260,"height":80,"color":"6"},
 		{"id":"return","type":"text","text":"## ↩️ 销售退货\n客户退货→退货入库","x":-30,"y":740,"width":260,"height":100,"color":"6"},
-		{"id":"title","type":"text","text":"# 销售一体化流程图\n**智邦国际 ERP · SUEL**","x":-280,"y":-1040,"width":400,"height":100,"color":"6"}
+		{"id":"title","type":"text","text":"# 销售一体化流程图\n**速易联 ERP · SUEL**","x":-280,"y":-1040,"width":400,"height":100,"color":"6"}
 	],
 	"edges":[
 		{"id":"e1","fromNode":"customer","fromSide":"right","toNode":"project","toSide":"left"},

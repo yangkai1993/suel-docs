@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "智邦国际ERP操作手册",
+    pageTitle: "速易联ERP操作手册",
     pageTitleSuffix: " | SUEL ERP",
     enableSPA: true,
     enablePopovers: true,

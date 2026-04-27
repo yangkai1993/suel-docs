@@ -5,7 +5,7 @@
 		{"id":"performance","type":"text","text":"## 📊 绩效考核\n[[10-人资部操作指南]]\n绩效指标→考核评分\n→ 结果应用","x":0,"y":20,"width":280,"height":160,"color":"3"},
 		{"id":"salary","type":"text","text":"## 💰 工资管理\n[[10-人资部操作指南]]\n1. 工资项目设置\n2. 工资账套设置\n3. 考勤存档\n4. 工资表制作\n5. 工资发放","x":-380,"y":300,"width":300,"height":260,"color":"4"},
 		{"id":"hr_change","type":"text","text":"## 🔄 人事调动\n[[10-人资部操作指南]]\n• 员工转正\n• 员工调动\n• 员工离职申请","x":0,"y":300,"width":280,"height":180,"color":"2"},
-		{"id":"title","type":"text","text":"# 人资一体化流程图\n**智邦国际 ERP · SUEL**","x":-200,"y":-880,"width":400,"height":80,"color":"6"},
+		{"id":"title","type":"text","text":"# 人资一体化流程图\n**速易联 ERP · SUEL**","x":-200,"y":-880,"width":400,"height":80,"color":"6"},
 		{"id":"recruit","type":"text","text":"## 📋 招聘管理\n[[10-人资部操作指南]]\n1. 用人部门申请\n2. 招聘计划执行\n3. 建立简历\n4. 执行面试","x":0,"y":-715,"width":300,"height":230,"color":"1"},
 		{"id":"account","type":"text","text":"## 🔐 系统账号\n[[13-上线准备手册]]\n档案→自动生成账号\n→ 管理员激活\n→ 权限模板分配","x":0,"y":-450,"width":300,"height":180,"color":"6"},
 		{"id":"phase1_label","type":"text","text":"## 📋 入职阶段","x":-700,"y":-715,"width":220,"height":60,"color":"0"},

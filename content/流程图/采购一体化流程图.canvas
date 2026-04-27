@@ -1,6 +1,6 @@
 {
 	"nodes":[
-		{"id":"title","type":"text","text":"# 采购一体化流程图\n**智邦国际 ERP · SUEL**","x":-200,"y":-900,"width":400,"height":80,"color":"6"},
+		{"id":"title","type":"text","text":"# 采购一体化流程图\n**速易联 ERP · SUEL**","x":-200,"y":-900,"width":400,"height":84,"color":"6"},
 		{"id":"supplier","type":"text","text":"## 🏢 供应商管理\n[[04-采购部操作指南]]\n录入供应商基本信息\n维护供应商资料","x":200,"y":-740,"width":300,"height":140,"color":"1"},
 		{"id":"pre_purchase","type":"text","text":"## 📋 预购单\n上游来源：\n• 生产订单转预购\n• 销售合同转预购","x":-300,"y":-740,"width":300,"height":140,"color":"1"},
 		{"id":"inquiry","type":"text","text":"## 🔍 询价比价\n向供应商询价\n比价确定采购方案","x":-300,"y":-540,"width":300,"height":120,"color":"1"},

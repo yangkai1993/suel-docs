@@ -27,7 +27,7 @@
 		{"id":"wage","type":"text","text":"## 💰 计件工资\n[[05-生产部操作指南]]\n确定工价→生成计件工资","x":60,"y":1320,"width":260,"height":140,"color":"6"},
 		{"id":"finance","type":"text","text":"## 💰 财务关联\n[[08-财务部操作指南]]\n收付款 / 开收票 / 成本核算","x":60,"y":1520,"width":280,"height":120,"color":"6"},
 		{"id":"pre_purchase","type":"text","text":"## 🛒 转预购（库存不足时）\n[[04-采购部操作指南]]\n库存不足物料→转预购\n采购部流程：预购→采购→收货→质检→入库","x":60,"y":70,"width":320,"height":180,"color":"6"},
-		{"id":"title","type":"text","text":"# 生产一体化流程图\n**智邦国际 ERP · SUEL**","x":-200,"y":-800,"width":400,"height":100,"color":"6"}
+		{"id":"title","type":"text","text":"# 生产一体化流程图\n**速易联 ERP · SUEL**","x":-200,"y":-800,"width":400,"height":100,"color":"6"}
 	],
 	"edges":[
 		{"id":"e1","fromNode":"sale_contract","fromSide":"bottom","toNode":"pre_plan","toSide":"top"},
