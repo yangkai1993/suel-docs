@@ -8,8 +8,8 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      "智邦国际ERP官网": "https://www.wangkangonline.com",
-      "操作手册首页": "/智邦国际ERP-操作总览",
+      "速易联ERP官网": "https://www.wangkangonline.com",
+      "操作手册首页": "/速易联ERP-操作总览",
     },
   }),
 }
